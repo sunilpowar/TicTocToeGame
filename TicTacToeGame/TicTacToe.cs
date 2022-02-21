@@ -22,9 +22,10 @@ namespace TicTacToeGame
         public void Choice()
         {
 
-            Console.WriteLine("Choose Either X or O");
+            Console.WriteLine("Choose X or O");
             char playerOne = Convert.ToChar(Console.ReadLine());
             char computerLetter;
+
             if (playerOne == 'X' || playerOne == 'O')
             {
                 if (playerOne == 'X')
@@ -38,7 +39,7 @@ namespace TicTacToeGame
             }
             else
             {
-                Console.WriteLine("Please choose either X or O");
+                Console.WriteLine("Invalid Player Choosen!");
                 Choice();
             }
 
